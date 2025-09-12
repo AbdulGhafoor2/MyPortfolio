@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- Linking CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
     <!-- ===== Header ===== -->
     <header>
         <div class="logo">MyPortfolio</div>
@@ -20,6 +19,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Hamburger (visible on mobile) -->
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
     </header>
 
     <!-- ===== Hero Section ===== -->
@@ -48,6 +50,7 @@
         <!-- Project 1 -->
         <div class="card">
             <h3>Lock Opening And Closing Integration</h3>
+            <img src="images/Dormakaba.jpeg" alt="Lock Integration Preview">
             <p>A web application built with ASP.NET Core, for Lock Opening And Closing.</p>
             <a href="https://github.com/AbdulGhafoor2/Cashtran" target="_blank">View Project</a>
         </div>
@@ -55,24 +58,35 @@
         <!-- Project 2 -->
         <div class="card">
             <h3>Library Management System</h3>
+            <img src="images/LibraryManagmentSystem.jpeg" alt="Library Management Preview">
             <p>Library Managment System using ASP.NET Core, SQL Database And MVC .</p>
             <a href="https://github.com/AbdulGhafoor2/LibraryManagementSystem" target="_blank">View Project</a>
         </div>
-       <!-- <div class="card">Project 3 (Coming Soon)</div> -->
-        
+        <!-- <div class="card">Project 3 (Coming Soon)</div> -->
+
     </section>
 
     <!-- ===== Contact Section ===== -->
-            <section id="contact" class="contact">
-                <h2>Contact Me</h2>
-                <p>Email: gktech134@gmail.com</p>
-                <p>Phone: +923169094835</p>
-            </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: gktech134@gmail.com</p>
+        <p>Phone: +923169094835</p>
+    </section>
 
-            <!-- ===== Footer ===== -->
-            <footer>
-                <p>© 2025 MyPortfolio | All Rights Reserved</p>
-            </footer>
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2025 MyPortfolio | All Rights Reserved</p>
+    </footer>
+    <!-- Back to top -->
+    <button id="topBtn" aria-label="Back to top">↑</button>
+
+    <!-- Lightbox -->
+    <div id="lightbox" aria-hidden="true">
+        <button id="close" aria-label="Close">×</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <!-- Script (must be in same folder as index.html) -->
+    <script src="script.js"></script>
 
 </body>
 </html>
