@@ -47,25 +47,18 @@
     <!-- ===== Projects Section ===== -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
-        <!-- Project 1 -->
-        <div class="card">
-            <h3>Lock Opening And Closing Integration</h3>
-            <img src="images/Dormakaba.jpeg" alt="Lock Integration Preview">
-            <p>A web application built with ASP.NET Core, for Lock Opening And Closing.</p>
-            <a href="https://github.com/AbdulGhafoor2/Cashtran" target="_blank">View Project</a>
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="websites">Websites</button>
+            <button data-filter="designs">Designs</button>
+            <button data-filter="miniapps">Mini Apps</button>
         </div>
 
-        <!-- Project 2 -->
-        <div class="card">
-            <h3>Library Management System</h3>
-            <img src="images/LibraryManagmentSystem.jpeg" alt="Library Management Preview">
-            <p>Library Managment System using ASP.NET Core, SQL Database And MVC .</p>
-            <a href="https://github.com/AbdulGhafoor2/LibraryManagementSystem" target="_blank">View Project</a>
-        </div>
-        <!-- <div class="card">Project 3 (Coming Soon)</div> -->
-
+        <!-- Projects container (cards will be injected here by JS) -->
+        <div id="project-list"></div>
     </section>
-
+        
     <!-- ===== Contact Section ===== -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
